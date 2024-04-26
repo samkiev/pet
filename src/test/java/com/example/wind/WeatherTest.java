@@ -1,4 +1,4 @@
-package ua.weatherchecker;
+package com.example.wind;
 
 import com.codeborne.selenide.CollectionCondition;
 import org.junit.jupiter.api.Test;
