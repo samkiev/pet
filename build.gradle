@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'com.codeborne:selenide:7.2.3'
+    testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.30'
+    testRuntimeOnly 'io.goodforgod:slf4j-simple-logger:2.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}
