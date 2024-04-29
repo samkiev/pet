@@ -22,6 +22,7 @@ dependencies {
     testImplementation 'io.qameta.allure:allure-commandline:2.25.0'
     testImplementation 'io.qameta.allure:allure-assertj:2.25.0'
     testImplementation 'io.qameta.allure:allure-selenide:2.25.0'
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.8.0'
 
     testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.30'
 //    testRuntimeOnly 'io.goodforgod:slf4j-simple-logger:2.0.0'
