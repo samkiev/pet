@@ -15,7 +15,7 @@ public class WeatherTest extends BaseTest{
         $(By.name("q"))
                 .setValue("Test")
                 .pressEnter();
-//        $$x("//div/a").shouldHave(CollectionCondition.size(5));
+        $$x("//div/a").shouldHave(CollectionCondition.size(5));
         int a = 0;
 
     }
