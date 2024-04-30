@@ -15,8 +15,17 @@ public class WeatherTest extends BaseTest{
         $(By.name("q"))
                 .setValue("Test")
                 .pressEnter();
+
+    }
+
+    @Test
+    public void checkWeather1() {
+        open("https://www.google.com/");
+        $x("//button[@id='L2AGLb']/div").click();
+        $(By.name("q"))
+                .setValue("Test")
+                .pressEnter();
         $$x("//div/a").shouldHave(CollectionCondition.size(5));
-        int a = 0;
 
     }
 }
