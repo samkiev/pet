@@ -15,16 +15,18 @@ public class BaseTest {
         WebDriverManager.chromedriver().setup();
 
         Configuration.browser = "chrome";
+        Configuration.headless = true;
+
         Configuration.webdriverLogsEnabled = true;
         Configuration.browserSize = "1920x1080";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
-    @AfterAll
-    public static void tearDown() {
-        WebDriver webDriver = WebDriverManager.getInstance().getWebDriver();
-        webDriver.close();
-    }
+//    @AfterAll
+//    public static void tearDown() {
+//        WebDriver webDriver = WebDriverManager.getInstance().getWebDriver();
+//        webDriver.close();
+//    }
 
 
 
