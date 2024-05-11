@@ -1,4 +1,4 @@
-package com.example.wind;
+package com.example.wind.ui;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;

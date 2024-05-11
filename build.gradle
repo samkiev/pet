@@ -11,10 +11,11 @@ repositories {
 }
 
 dependencies {
+    //junit
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation 'org.junit.jupiter:junit-jupiter'
-
+    //UI
     testImplementation 'com.codeborne:selenide:7.2.3'
     //Allure
     testImplementation 'io.qameta.allure:allure-java-commons:2.25.0'
@@ -23,9 +24,11 @@ dependencies {
     testImplementation 'io.qameta.allure:allure-assertj:2.25.0'
     testImplementation 'io.qameta.allure:allure-selenide:2.25.0'
     testImplementation 'io.github.bonigarcia:webdrivermanager:5.8.0'
-
+    //Rest
+    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+    //Logs
     testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.30'
-//    testRuntimeOnly 'io.goodforgod:slf4j-simple-logger:2.0.0'
+
 }
 
 test {
